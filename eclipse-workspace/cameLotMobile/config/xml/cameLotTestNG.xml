@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cameLotMobile" allow-return-values="true"
+	thread-count="1">
+	<listeners>
+		<listener class-name="com.cameLot.listeners.WebDriverListener"></listener>
+		<!-- <listener class-name="com.ascena.listeners.RetryListener"></listener> -->
+	</listeners>
+	<test name="cameLotMobile">
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="env" value="prod"></parameter> <!-- bfix/stage/prod/ -->
+		<classes>
+			<class name="cameLot.testscripts.CameLotTestScripts" />
+		</classes>
+	</test>
+</suite> <!-- Default suite -->
