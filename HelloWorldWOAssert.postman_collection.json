@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "853f163f-ea06-46b2-924e-51349ee4e703",
+		"name": "Hello World",
+		"description": "A simple collection with one request that has tests to validate response. You can use this collection as a entry-levle example to demonstrate Postman's debugging capabilities.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\": \"Hello, World!\"\n}"
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Hello World",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\": \"Hello, World!\"\n}"
+						},
+						"url": {
+							"raw": "https://postman-echo.com/post",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 03 Sep 2022 12:03:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "599"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"257-oND9pNx4g3P2D0srUNVN90TT5/E\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "set-cookie",
+							"value": "sails.sid=s%3AH0UkaHeNXksG4PRsZf_HF_rfH4LFVoAJ.T3dH0m5RwgoqQqB5zGxsH0VsFYOXCDoxS%2FENQ5AnhY4; Path=/; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"args\": {},\n    \"data\": {\n        \"message\": \"Hello, World!\"\n    },\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-6313428f-3f32f0b76815a9d81cfa7f09\",\n        \"content-length\": \"31\",\n        \"content-type\": \"application/json\",\n        \"user-agent\": \"PostmanRuntime/7.28.2\",\n        \"accept\": \"*/*\",\n        \"postman-token\": \"1f344b2e-bdf4-449d-8fce-04f18ce2a9d9\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"sails.sid=s%3AsUfqsoSFhrjYfC2bhPis3qA3lSjAKr7h.j3fctzZQ942LugqGDD09nz1Rn%2FUQFRMe%2F3ofs0ToHlM\"\n    },\n    \"json\": {\n        \"message\": \"Hello, World!\"\n    },\n    \"url\": \"https://postman-echo.com/post\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
